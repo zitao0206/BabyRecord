@@ -1,0 +1,29 @@
+PODS:
+  - AKOCommonToolsKit (0.0.31)
+  - BabyDailyRecord (0.1.0):
+    - AKOCommonToolsKit
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - AKOCommonToolsKit (= 0.0.31)
+  - BabyDailyRecord (from `./LocalPods/BabyDailyRecord`)
+
+SPEC REPOS:
+  https://github.com/zitao0206/MDSpecs.git:
+    - AKOCommonToolsKit
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  BabyDailyRecord:
+    :path: "./LocalPods/BabyDailyRecord"
+
+SPEC CHECKSUMS:
+  AKOCommonToolsKit: 2b62669cc9704a200defd16b5c06a33404f47f24
+  BabyDailyRecord: 32c53c6641d578b48a7f3b5ccb4a45803b23cd12
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 4bece1a6743acaacafcf2d443ef903b797e66314
+
+COCOAPODS: 1.11.3

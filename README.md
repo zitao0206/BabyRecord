@@ -1,2 +1,29 @@
 # BabyRecord
-This is a project for baby's daily record(milk record...).
+
+[![CI Status](https://img.shields.io/travis/lizitao/BabyRecord.svg?style=flat)](https://travis-ci.org/lizitao/BabyRecord)
+[![Version](https://img.shields.io/cocoapods/v/BabyRecord.svg?style=flat)](https://cocoapods.org/pods/BabyRecord)
+[![License](https://img.shields.io/cocoapods/l/BabyRecord.svg?style=flat)](https://cocoapods.org/pods/BabyRecord)
+[![Platform](https://img.shields.io/cocoapods/p/BabyRecord.svg?style=flat)](https://cocoapods.org/pods/BabyRecord)
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+## Installation
+
+BabyRecord is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'BabyRecord'
+```
+
+## Author
+
+lizitao, 634376133@qq.com
+
+## License
+
+BabyRecord is available under the MIT license. See the LICENSE file for more info.

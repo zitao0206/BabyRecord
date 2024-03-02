@@ -1,0 +1,6 @@
+framework module BabyDailyRecord {
+  umbrella header "BabyDailyRecord-umbrella.h"
+
+  export *
+  module * { export * }
+}

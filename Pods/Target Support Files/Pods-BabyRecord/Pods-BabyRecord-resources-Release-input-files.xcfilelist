@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-BabyRecord/Pods-BabyRecord-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/BabyDailyRecord/BabyRecord.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/BabyDailyRecord/BabyRecord-Images.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/BabyDailyRecord/BabyRecord-Videos.bundle

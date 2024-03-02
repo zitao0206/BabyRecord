@@ -1,0 +1,50 @@
+{
+  "name": "BabyDailyRecord",
+  "version": "0.1.0",
+  "summary": "A short description of BabyDailyRecord.",
+  "homepage": "https://github.com/zitao0206/BabyRecord",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zitao0206": "634376133@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zitao0206/BabyRecord.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "16.0"
+  },
+  "pod_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "__CUI_MODULE_NAME__=\\\"BabyRecord\\\" CUI_MODULE_NAME=@\\\"BabyRecord\\\""
+  },
+  "source_files": [
+    "Classes/**/*"
+  ],
+  "resource_bundles": {
+    "BabyRecord": [
+      "Assets/**/*"
+    ],
+    "BabyRecord-Images": [
+      "Resources/Images/**/*"
+    ],
+    "BabyRecord-Videos": [
+      "Resources/Videos/**/*"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "MapKit"
+  ],
+  "dependencies": {
+    "AKOCommonToolsKit": [
+
+    ],
+    "Masonry": [
+
+    ]
+  }
+}
