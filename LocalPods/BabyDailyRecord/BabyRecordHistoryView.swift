@@ -17,9 +17,9 @@ struct BabyRecordHistoryView: View {
         VStack {
             List {
                 ForEach(sortedFeedings, id: \.key) { date, records in
-                    Section(header: Text("\(DateUtillity.formattedDateToMMDD(date)) 奶量：\(totalAmountToday)ml")) {
+                    Section(header: Text("\(DateUtillity.formattedDateToMMDD(date))    Amount：\(totalAmountToday)").bold().foregroundColor(Color.blue)) {
                         ForEach(records, id: \.time) { record in
-                            Text("\(DateUtillity.formattedDateToHHMM(record.time)) - \(record.amount)ml")
+                            Text("\(DateUtillity.formattedDateToHHMM(record.time)) - \(record.amount)")
                         }
                     }
                 }

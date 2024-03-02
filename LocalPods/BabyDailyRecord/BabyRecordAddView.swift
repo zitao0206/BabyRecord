@@ -93,19 +93,71 @@ struct BabyRecordAddView: View {
             }
  
             List {
-                Section(header: Text("Today's amount (\(totalAmountToday)ml)").bold()) {  
+                Section(header: Text("Today's amount (\(totalAmountToday)ml)").bold().foregroundColor(Color.blue)) {  
                     ForEach(feedingRecords[Calendar.current.startOfDay(for: Date()), default: []], id: \.time) { record in
                         Text("\(DateUtillity.formattedDateToHHMM(record.time)) - \(record.amount)")
                     }
+                    .onDelete(perform: deleteItems)
                 }
             }
-            .padding(.bottom, 10) // 或者使用 frame 限制大小
+            .padding(.bottom, 10)
+           
             
         }
         .onAppear {
             loadFeedingRecords()
         }
     }
+    
+    
+    private func addFeedingRecord() {
+        withAnimation {
+            if newRecord.amount <= 0 {
+                showAlert = true
+                return
+            }
+            
+            let record = FeedingRecord(time: newRecord.time, amount: newRecord.amount)
+            let date = Calendar.current.startOfDay(for: newRecord.time)
+            
+            if var records = feedingRecords[date] {
+                records.insert(record, at: 0) // 将新记录插入到数组的开头位置
+                feedingRecords[date] = records
+            } else {
+                feedingRecords[date] = [record]
+            }
+        }
+
+        saveFeedingRecords()
+        
+        // reset
+        newRecord = NewFeedingRecord(time: Date(), amount: 0)
+    }
+    
+    private func deleteItems(offsets: IndexSet) {
+        withAnimation {
+       
+            for index in offsets {
+             
+                let date = Array(feedingRecords.keys)[index]
+           
+                var records = feedingRecords[date] ?? []
+            
+                records.remove(at: index)
+           
+                if records.isEmpty {
+                    feedingRecords.removeValue(forKey: date)
+                } else {
+                
+                    feedingRecords[date] = records
+                }
+            }
+    
+            saveFeedingRecords()
+        }
+    }
+
+
     
     private func loadFeedingRecords() {
         if let data = UserDefaults.standard.data(forKey: "feedingRecords") {
@@ -116,30 +168,6 @@ struct BabyRecordAddView: View {
                 print("Error decoding feeding records: \(error.localizedDescription)")
             }
         }
-    }
-    
-    private func addFeedingRecord() {
-        if newRecord.amount <= 0 {
-            showAlert = true
-            return
-        }
-        
-      
-        
-        let record = FeedingRecord(time: newRecord.time, amount: newRecord.amount)
-        let date = Calendar.current.startOfDay(for: newRecord.time)
-        
-        if var records = feedingRecords[date] {
-            records.insert(record, at: 0) // 将新记录插入到数组的开头位置
-            feedingRecords[date] = records
-        } else {
-            feedingRecords[date] = [record]
-        }
-
-        saveFeedingRecords()
-        
-        // 重置输入
-        newRecord = NewFeedingRecord(time: Date(), amount: 0)
     }
     
     private func saveFeedingRecords() {
