@@ -11,28 +11,28 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>BabyDailyRecord-BabyRecord-Images.xcscheme</key>
+		<key>DailyMilkRecord-DailyMilkRecord-Images.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>BabyDailyRecord-BabyRecord-Videos.xcscheme</key>
+		<key>DailyMilkRecord-DailyMilkRecord-Videos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>BabyDailyRecord-BabyRecord.xcscheme</key>
+		<key>DailyMilkRecord-DailyMilkRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>BabyDailyRecord.xcscheme</key>
+		<key>DailyMilkRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

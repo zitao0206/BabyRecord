@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double BabyDailyRecordVersionNumber;
-FOUNDATION_EXPORT const unsigned char BabyDailyRecordVersionString[];
+FOUNDATION_EXPORT double DailyMilkRecordVersionNumber;
+FOUNDATION_EXPORT const unsigned char DailyMilkRecordVersionString[];
 

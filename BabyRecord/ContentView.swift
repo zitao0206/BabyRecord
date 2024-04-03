@@ -6,19 +6,15 @@
 //
 
 import SwiftUI
-import BabyDailyRecord
+import DailyMilkRecord
 
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            BabyRecordDetailView()
-            .navigationBarTitle("Baby Record", displayMode: .automatic)
+            AmountRecordDetailView(item: ToolItem(title: "Daily Milk Record", imageType: "pencil.tip.crop.circle.badge.plus"))
+            .navigationBarTitle("Daily Milk Record", displayMode: .inline)
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+ 

@@ -9,7 +9,7 @@ install! 'cocoapods',
          :warn_for_multiple_pod_sources => false,
          :preserve_pod_file_structure => true
 
-platform :ios, '16.0'
+platform :ios, '15.8'
 inhibit_all_warnings!
 use_frameworks! :linkage => :static
 
@@ -19,7 +19,7 @@ project 'BabyRecord.xcodeproj'
 
 
 target 'BabyRecord' do
-  pod 'BabyDailyRecord', :path => './LocalPods/BabyDailyRecord'
+  pod 'DailyMilkRecord', :path => './LocalPods/DailyMilkRecord'
 
   pod 'AKOCommonToolsKit', '0.0.31'
  

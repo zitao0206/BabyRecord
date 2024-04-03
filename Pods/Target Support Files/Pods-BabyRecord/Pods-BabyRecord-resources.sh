@@ -97,14 +97,14 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/BabyDailyRecord/BabyRecord.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/BabyDailyRecord/BabyRecord-Images.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/BabyDailyRecord/BabyRecord-Videos.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DailyMilkRecord/DailyMilkRecord.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DailyMilkRecord/DailyMilkRecord-Images.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DailyMilkRecord/DailyMilkRecord-Videos.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/BabyDailyRecord/BabyRecord.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/BabyDailyRecord/BabyRecord-Images.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/BabyDailyRecord/BabyRecord-Videos.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DailyMilkRecord/DailyMilkRecord.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DailyMilkRecord/DailyMilkRecord-Images.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DailyMilkRecord/DailyMilkRecord-Videos.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

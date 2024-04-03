@@ -1,0 +1,6 @@
+framework module DailyMilkRecord {
+  umbrella header "DailyMilkRecord-umbrella.h"
+
+  export *
+  module * { export * }
+}

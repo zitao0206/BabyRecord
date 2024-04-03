@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D936985C61706AED017A7DD7BDB1E6E"
-               BuildableName = "BabyDailyRecord.framework"
-               BlueprintName = "BabyDailyRecord"
+               BlueprintIdentifier = "D7FF7D9F0E1E1BADEDD023666B124839"
+               BuildableName = "DailyMilkRecord-Images.bundle"
+               BlueprintName = "DailyMilkRecord-DailyMilkRecord-Images"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -1,13 +1,13 @@
 PODS:
   - AKOCommonToolsKit (0.0.31)
-  - BabyDailyRecord (0.1.0):
+  - DailyMilkRecord (0.1.0):
     - AKOCommonToolsKit
     - Masonry
   - Masonry (1.1.0)
 
 DEPENDENCIES:
   - AKOCommonToolsKit (= 0.0.31)
-  - BabyDailyRecord (from `./LocalPods/BabyDailyRecord`)
+  - DailyMilkRecord (from `./LocalPods/DailyMilkRecord`)
 
 SPEC REPOS:
   https://github.com/zitao0206/MDSpecs.git:
@@ -16,14 +16,14 @@ SPEC REPOS:
     - Masonry
 
 EXTERNAL SOURCES:
-  BabyDailyRecord:
-    :path: "./LocalPods/BabyDailyRecord"
+  DailyMilkRecord:
+    :path: "./LocalPods/DailyMilkRecord"
 
 SPEC CHECKSUMS:
   AKOCommonToolsKit: 2b62669cc9704a200defd16b5c06a33404f47f24
-  BabyDailyRecord: 32c53c6641d578b48a7f3b5ccb4a45803b23cd12
+  DailyMilkRecord: efef6c70c2d7127213b7d0d3a11ce4b15b141437
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 4bece1a6743acaacafcf2d443ef903b797e66314
+PODFILE CHECKSUM: 2c25a8df12eff720c13705d9181c307cbb4dde96
 
 COCOAPODS: 1.11.3

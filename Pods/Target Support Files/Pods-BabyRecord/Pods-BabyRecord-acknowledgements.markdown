@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## BabyDailyRecord
+## DailyMilkRecord
 
 Copyright (c) 2021 zitao0206 <63437613@qq.com>
 
