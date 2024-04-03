@@ -11,8 +11,8 @@ import DailyMilkRecord
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            AmountRecordDetailView(item: ToolItem(title: "Daily Milk Record", imageType: "pencil.tip.crop.circle.badge.plus"))
-            .navigationBarTitle("Daily Milk Record", displayMode: .inline)
+            AmountRecordDetailView(item: ToolItem(title: "Baby Daily Milk", imageType: "pencil.tip.crop.circle.badge.plus"))
+            .navigationBarTitle("Baby Daily Milk", displayMode: .inline)
         }
     }
 }
