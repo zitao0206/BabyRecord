@@ -42,20 +42,20 @@ struct AmountRecordHistoryView: View {
                 }
             }
             .padding(.bottom, 5)
-            HStack {
-                Spacer()
-                Button(action: {
-                 // 悬浮按钮的动作
-                }) {
-                 Image(systemName: "plus.circle.fill")
-                     .resizable()
-                     .aspectRatio(contentMode: .fit)
-                     .frame(width: 50, height: 50)
-                     .foregroundColor(.blue)
-                     .padding()
-                }
-            }
-            .padding(.bottom, 20)
+//            HStack {
+//                Spacer()
+//                Button(action: {
+//                 // 悬浮按钮的动作
+//                }) {
+//                 Image(systemName: "plus.circle.fill")
+//                     .resizable()
+//                     .aspectRatio(contentMode: .fit)
+//                     .frame(width: 50, height: 50)
+//                     .foregroundColor(.blue)
+//                     .padding()
+//                }
+//            }
+//            .padding(.bottom, 20)
         }
      
         .onAppear {
