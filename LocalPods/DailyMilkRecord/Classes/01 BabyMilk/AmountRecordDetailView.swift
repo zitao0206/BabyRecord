@@ -20,36 +20,37 @@ public struct AmountRecordDetailView: View {
     @State private var showingSettings = false
     
     public var body: some View {
-        TabView(selection: $selectedTab) {
-            AmountRecordAddView()
-              .tag(0)
-              .tabItem {
-                  Label("Add", systemImage: "plus.circle.fill")
-              }
-            AmountRecordHistoryView()
-              .tag(1)
-              .tabItem {
-                  Label("Details", systemImage: "list.clipboard")
-              }
-            AmountRecordSettingView()
-              .tag(2)
-              .tabItem {
-//                  Label("Trend", systemImage: "waveform.path.ecg")
-                  Label("Setting", systemImage: "gearshape")
-              }
-            
+        ZStack {
+            TabView(selection: $selectedTab) {
+                AmountRecordAddView()
+                  .tag(0)
+                  .tabItem {
+                      Label("Add", systemImage: "plus.circle.fill")
+                  }
+                AmountRecordHistoryView()
+                  .tag(1)
+                  .tabItem {
+                      Label("Details", systemImage: "list.clipboard")
+                  }
+                AmountRecordAnalysisView()
+                  .tag(2)
+                  .tabItem {
+                      Label("Trend", systemImage: "waveform.path.ecg")
+                  }
+                
+            }
+            NavigationLink(destination: AmountRecordSettingView(), isActive: $showingSettings) {
+                EmptyView()
+            }
         }
-   
-//        NavigationLink(destination: AmountRecordSettingView(), isActive: $showingSettings) {
-//            EmptyView()
-//        }
-//        .navigationBarItems(trailing: Button(action: {
-//            showingSettings = true
-//        }) {
-//            Image(systemName: "gearshape")
-//                .font(.system(size: 16))
-//                .foregroundColor(DarkMode.isDarkMode ? .white : .black)
-//        })
+ 
+        .navigationBarItems(trailing: Button(action: {
+            showingSettings = true
+        }) {
+            Image(systemName: "gearshape")
+                .font(.system(size: 16))
+                .foregroundColor(DarkMode.isDarkMode ? .white : .black)
+        })
         .navigationBarTitle(item.title, displayMode: .inline)
     }
     

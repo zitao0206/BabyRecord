@@ -12,6 +12,7 @@
 		D81FA1FA2B92C87000CFB9C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81FA1F92B92C87000CFB9C8 /* ContentView.swift */; };
 		D81FA1FC2B92C87200CFB9C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81FA1FB2B92C87200CFB9C8 /* Assets.xcassets */; };
 		D81FA1FF2B92C87200CFB9C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81FA1FE2B92C87200CFB9C8 /* Preview Assets.xcassets */; };
+		D890B22D2BBEF8A800F19D4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D890B22C2BBEF8A800F19D4F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		D81FA1FB2B92C87200CFB9C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D81FA1FE2B92C87200CFB9C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D890B22B2BBD94F300F19D4F /* BabyRecord.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabyRecord.entitlements; sourceTree = "<group>"; };
+		D890B22C2BBEF8A800F19D4F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D890B2302BBEF9DE00F19D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +71,11 @@
 		D81FA1F62B92C87000CFB9C8 /* BabyRecord */ = {
 			isa = PBXGroup;
 			children = (
+				D890B2302BBEF9DE00F19D4F /* Info.plist */,
 				D890B22B2BBD94F300F19D4F /* BabyRecord.entitlements */,
 				D81FA1F72B92C87000CFB9C8 /* BabyRecordApp.swift */,
 				D81FA1F92B92C87000CFB9C8 /* ContentView.swift */,
+				D890B22C2BBEF8A800F19D4F /* LaunchScreen.storyboard */,
 				D81FA1FB2B92C87200CFB9C8 /* Assets.xcassets */,
 				D81FA1FD2B92C87200CFB9C8 /* Preview Content */,
 			);
@@ -153,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D890B22D2BBEF8A800F19D4F /* LaunchScreen.storyboard in Resources */,
 				D81FA1FF2B92C87200CFB9C8 /* Preview Assets.xcassets in Resources */,
 				D81FA1FC2B92C87200CFB9C8 /* Assets.xcassets in Resources */,
 			);
@@ -343,11 +349,11 @@
 				DEVELOPMENT_TEAM = 688B74985L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = DailyBabyMilk;
+				INFOPLIST_FILE = BabyRecord/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Milk Minder";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.8;
@@ -383,11 +389,11 @@
 				DEVELOPMENT_TEAM = 688B74985L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = DailyBabyMilk;
+				INFOPLIST_FILE = BabyRecord/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Milk Minder";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.8;

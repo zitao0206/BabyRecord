@@ -90,7 +90,8 @@ struct AmountRecordSettingView: View {
             
 
         }
-        .navigationBarTitle("Settings", displayMode: .inline)
+        .commmonNavigationBar(title: "Settings", displayMode: .inline)
+//        .navigationBarTitle("Settings", displayMode: .inline)
         .onAppear {
               
             let savedDatabaseName = UserDefaults.standard.string(forKey: UserDefaultsConstants.amountRecordDatabaseIdentifier)
